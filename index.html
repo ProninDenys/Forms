@@ -3,9 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Forms</title>
 </head>
 <body>
+  
+    <form action="" method="POST">
+     
+      <p>
+        <label for="name"> Full name</label>
+        
+        <input
+          tabindex="2"
+          id="name"
+          placeholder="Your name"
+          name="name"
+          type="text"
+          required
+          minlength="2"
+          maxlength="40"
+          list="names"
+        />
+      </p>
+      <p>
+        <label for="email">Email</label>
+        <input
+          tabindex="1"
+          id="email"
+          placeholder="Your email"
+          name="email"
+          type="email"
+          required
+        />
+      </p>
+      <p>
+        <label for="password">Password</label>
+        <input
+          id="password"
+          placeholder="Your password"
+          name="password"
+          type="password"
+          minlength="4"
+          maxlength="20"
+          width="200px"
+          required
+        />
+      </p>
+
+      <p>
+        <label for="password">Re-password</label>
+        <input
+          id="Re-password"
+          placeholder="Your re-password"
+          name="password"
+          type="password"
+          minlength="4"
+          maxlength="20"
+          width="200px"
+          required
+        />
+      </p>
+
+      <p>
+        <label for="avatar">Your photo</label>
+        <input
+          id="avatar"
+          name="avatar"
+          type="file"
+          accept="image/png, image/jpg"
+        />
+      </p>
+
+      <p>Gender</p>
+      <ul>
+        <li>
+          <label>
+            Male
+            <input checked name="gender" type="radio" />
+          </label>
+        </li>
+        <li>
+          <label>
+            Female
+            <input name="gender" type="radio" />
+          </label>
+        </li>
+      </ul>
+
+      <p>
+        <label for="age">Age</label>
+        <input
+          id="age"
+          name="age"
+          type="number"
+          min="18"
+          max="120"
+        />
+      </p>
+
+      <p>
+        <label for="birthday">Your birthday</label>
+        <input id="birthday" name="birthday" type="date" />
+      </p>
+
+      <p>
+        <label for="Address">Address</label>
+        <textarea
+          id="Your full address"
+          name="text"
+          rows="5"
+          maxlength="100"
+          minlength="10"
+        ></textarea>
+    </p>
+
+
+    <p>I agree to the processing of personal data</p>
+    <ul>
+      <li>
+        <label>
+          Yes
+          <input checked name="privecy" type="radio" />
+        </label>
+      </li>
+      <li>
+        <label>
+          No
+          <input name="privecy" type="radio" />
+        </label>
+      </li>
+    </ul>
+
+    <button type="submit">Сlear form</button>         <button type="submit">Sign up</button>
     
+    </form>
+
 </body>
 </html>
